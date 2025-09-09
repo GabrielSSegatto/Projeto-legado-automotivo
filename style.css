@@ -6,6 +6,7 @@
 body {
     background-color: rgba(26, 24, 25, 255);
     margin: 0;
+    line-height: 1.6;
 }
 
 /*BANNER*/
@@ -147,4 +148,80 @@ body {
 
 .button-sound i {
     margin-right: 8px;
+}
+
+.rodape{
+    background-color: rgb(23, 23, 26);
+    color: #ccc;
+    padding: 40px 5%;
+    margin-top: 50px;
+    border-top: 4px double rgb(216, 178, 6);
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rodape-coluna{
+    flex: 1;
+    padding: 0 20px;
+    border-right: 1px solid #444;
+    text-align: center;
+}
+
+.rodape-coluna:last-child{
+    border-right: none;
+}
+
+.rodape-coluna h4{
+    color: rgb(216, 178, 6);
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.rodape-coluna p, .rodape-coluna li{
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.rodape-coluna ul{
+    list-style: none;
+    padding: 0;
+}
+
+.rodape-coluna a{
+    color: #ccc;
+    text-decoration: none;
+}
+.rodape-coluna a:hover {
+    color: white;
+}
+
+.rodape-direitos{
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 0.8em;
+    color: #888;
+}
+
+.rodape-icones {
+    margin-top: 20px; /* Adiciona um espaço acima dos ícones */
+}
+
+.rodape-icones a {
+    color: #ccc; 
+    font-size: 1.8em; 
+    margin: 0 10px; 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+}
+
+.rodape-icones a:hover {
+    color: rgb(216, 178, 6); 
+    transform: translateY(-3px); 
 }
