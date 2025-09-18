@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 body {
   background-color: rgba(26, 24, 25, 255);
   margin: 0;
   line-height: 1.6;
+  font-family: "Lato", sans-serif;
 }
 
 /*BANNER*/
@@ -22,7 +24,9 @@ body {
   display: block;
 }
 
-.banner::after { /* Coloca efeito de degrade entre imagem do banner e coloração padrão da página */
+.efeito-fusao::after {
+  /* Coloca efeito de degrade entre imagem do banner e coloração padrão da página */
+  /*Efeito de transição/degrade entre imagem e texto reutilizavel*/
   content: "";
   position: absolute;
   bottom: 0;
@@ -221,15 +225,46 @@ body {
   transform: translateY(-3px);
 }
 
-.secao-conteudo{
+.secao-conteudo {
   padding: 40px 10%;
   color: #ccc;
 }
-.secao-conteudo h1{
+
+.pagina-hero {
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  position: relative; /*Garantir que o after se posiçione em relação ao pagina-hero*/
+  overflow: hidden;
+}
+
+.omega-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/imagens/omega-painel.jpg");
+}
+.pagina-hero-conteudo h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3.5em;
+  text-shadow: 2px 2px 5px black;
+}
+
+.secao-conteudo p {
+  max-width: 75ch; /*Limita a quantidade de caracterres por linha 
+  em aproximadamente 75, usando o O da fonte como base*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secao-conteudo h1 {
   color: rgb(216, 178, 6);
 }
-.secao-conteudo h3{
-  color: whitesmoke ;
+.secao-conteudo h3 {
+  color: whitesmoke;
   padding-bottom: 10px;
   border-bottom: 2px solid rgb(216, 178, 6);
   display: inline-block; /*Faz com que a linha fique do mesmo tamanho do texto*/
