@@ -8,10 +8,6 @@ body {
   line-height: 1.6;
 }
 
-p{
-  color: bisque;
-}
-
 /*BANNER*/
 .banner {
   position: relative;
@@ -26,7 +22,7 @@ p{
   display: block;
 }
 
-.banner::after {
+.banner::after { /* Coloca efeito de degrade entre imagem do banner e coloração padrão da página */
   content: "";
   position: absolute;
   bottom: 0;
@@ -223,4 +219,18 @@ p{
 .rodape-icones a:hover {
   color: rgb(216, 178, 6);
   transform: translateY(-3px);
+}
+
+.secao-conteudo{
+  padding: 40px 10%;
+  color: #ccc;
+}
+.secao-conteudo h1{
+  color: rgb(216, 178, 6);
+}
+.secao-conteudo h3{
+  color: whitesmoke ;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(216, 178, 6);
+  display: inline-block; /*Faz com que a linha fique do mesmo tamanho do texto*/
 }
