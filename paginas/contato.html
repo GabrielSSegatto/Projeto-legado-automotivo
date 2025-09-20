@@ -1,87 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <title>legado automotivo_contato</title>
-    <link
-      rel="icon"
-      href="../imagens/Gemini_Generated_Image_38nso038nso038ns_1_-removebg-preview(1).png"
-    />
-  </head>
-  <body>
-    <header>
-      <!--MENU-->
-      <nav>
-        <ul class="menu">
-          <li>
-            <a href="../index.html">
-              <img
-                src="../imagens/Gemini_Generated_Image_38nso038nso038ns_1_-removebg-preview(1).png"
-                alt="Logo"
-              />
-            </a>
-          </li>
-          <li><a href="../index.html">LEGADO AUTOMOTIVO</a></li>
-          <li><a href="modelos.html">Modelos</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="sugestoes.html">Sugestões</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <footer class="rodape">
-      <div class="rodape-container">
-        <div class="rodape-coluna">
-          <h4>Legado automotivo</h4>
-          <p>
-            Um espaço dedicado a celebrar os ícones sobre rodas que marcaram
-            gerações.
-          </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>legado automotivo_contato</title>
+  <link rel="icon" href="../imagens/Gemini_Generated_Image_38nso038nso038ns_1_-removebg-preview(1).png" />
+</head>
 
-          <div class="rodape-icones">
-            <a
-              href="https://github.com/GabrielSSegatto"
-              title="Veja meu GitHub"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="mailto:gabriels080404@gmail.com"
-              title="Entre em contato por E-mail"
-            >
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="sugestoes.html" title="Envie uma sugestão">
-              <i class="fa-solid fa-lightbulb"></i>
-            </a>
-            <a href="#" title="Voltar ao topo">
-              <i class="fa-solid fa-arrow-up"></i>
-            </a>
-          </div>
-        </div>
+<body>
+  <header>
+    <!--MENU-->
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="../index.html">
+            <img src="../imagens/Gemini_Generated_Image_38nso038nso038ns_1_-removebg-preview(1).png" alt="Logo" />
+          </a>
+        </li>
+        <li><a href="../index.html">LEGADO AUTOMOTIVO</a></li>
+        <li><a href="modelos.html">Modelos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sugestoes.html">Sugestões</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="rodape-coluna">
-          <h4>Navegação</h4>
-          <ul>
-            <li><a href="modelos.html">Modelos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contatos</a></li>
-            <li><a href="sugestoes.html">Sugestões</a></li>
-          </ul>
-        </div>
+  <main>
 
-        <div class="rodape-coluna">
-          <a href="aviso.html">aviso importante</a>
+    <section class="pagina-hero contato-hero efeito-fusao">
+      <div class="pagina-hero-conteudo">
+        <h1>Venha fazer parte da Comunidade</h1>
+        <p>Este é o seu espaço, envie sua história, sugestão ou entre em contato conosco.</p>
+      </div>
+    </section>
+
+    <div class="coluna-artigo">
+      <div class="secao-conteudo">
+        <h2>Envie a história do seu classico</h2>
+        <p>Sinta-se a vontade para compartilhar.</p>
+        <p>Nossa comunidade é feita por entusiastas como você. Acreditamos que cada carro clássico tem uma alma e uma
+          história que merece ser contada. Seja uma longa viagem, o processo de restauração ou a herança de família, seu
+          relato é o que enriquece o nosso legado.</p>
+        <p>Use o formulário abaixo para compartilhar os detalhes do seu carro e sua melhor memória com ele. As histórias
+          selecionadas serão publicadas em nosso mural, com os devidos créditos, para inspirar outros amantes de
+          automóveis.</p>
+      </div>
+    </div>
+
+    <form action="#" method="post" class="formulario-contato">
+
+      <fieldset>
+        <legend>Seus Dados</legend>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome como aparecerá na história">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="Apenas para contato, não será divulgado">
+
+        <label for="cidade">Cidade / Estado:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Ex: São Paulo / SP">
+
+        <label for="idade">Data de Nascimento:</label>
+        <input type="date" id="idade" name="idade">
+      </fieldset>
+
+      <fieldset>
+        <legend>Seu Carro Clássico</legend>
+
+        <label for="modelo">Modelo do Carro:</label>
+        <input type="text" id="modelo" name="modelo" required placeholder="Ex: Chevrolet Omega CD">
+
+        <label for="ano">Ano de Fabricação / Modelo:</label>
+        <input type="text" id="ano" name="ano" placeholder="Ex: 1996 / 1996">
+
+        <label for="motor">Motorização:</label>
+        <select id="motor" name="motor">
+          <option value="">Escolha uma opção</option>
+          <option value="4.1">4.1 (6 cilindros)</option>
+          <option value="3.0">3.0 (6 cilindros)</option>
+          <option value="2.2">2.2 (4 cilindros)</option>
+          <option value="2.0">2.0 (4 cilindros)</option>
+          <option value="outro">Outra</option>
+        </select>
+
+        <p>Condição do Veículo:</p>
+        <input type="radio" id="original" name="condicao" value="original">
+        <label for="original">Totalmente Original</label><br>
+        <input type="radio" id="restaurado" name="condicao" value="restaurado">
+        <label for="restaurado">Restaurado</label><br>
+        <input type="radio" id="modificado" name="condicao" value="modificado">
+        <label for="modificado">Customizado / Modificado</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sua História com o Carro</legend>
+
+        <label for="historia">Conte-nos sua melhor memória ou a história do carro:</label>
+        <textarea id="historia" name="historia" rows="8"
+          placeholder="Como ele chegou até você? Qual foi a viagem mais marcante?"></textarea>
+
+        <label for="foto_url">Link de uma foto do carro (Instagram, Imgur, etc.):</label>
+        <input type="url" id="foto_url" name="foto_url" placeholder="https://exemplo.com/foto.jpg">
+      </fieldset>
+
+      <fieldset>
+        <legend>Interesses e Permissões</legend>
+
+        <p>Quais tópicos mais te interessam? (Marque quantos quiser)</p>
+        <input type="checkbox" id="int_mecanica" name="interesses" value="mecanica">
+        <label for="int_mecanica">Dicas de Mecânica</label><br>
+        <input type="checkbox" id="int_historia" name="interesses" value="historia">
+        <label for="int_historia">Histórias de Modelos</label><br>
+        <input type="checkbox" id="int_eventos" name="interesses" value="eventos">
+        <label for="int_eventos">Encontros e Eventos</label><br>
+
+        <label for="avaliacao">Qual sua nota para nosso site? (1 a 10)</label>
+        <input type="range" id="avaliacao" name="avaliacao" min="1" max="10" step="1">
+
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Eu autorizo a publicação da minha história e foto no site.</label><br>
+      </fieldset>
+
+      <input type="submit" value="Enviar Minha História">
+
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-container">
+      <div class="rodape-coluna">
+        <h4>Legado automotivo</h4>
+        <p>
+          Um espaço dedicado a celebrar os ícones sobre rodas que marcaram
+          gerações.
+        </p>
+
+        <div class="rodape-icones">
+          <a href="https://github.com/GabrielSSegatto" title="Veja meu GitHub" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:gabriels080404@gmail.com" title="Entre em contato por E-mail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="sugestoes.html" title="Envie uma sugestão">
+            <i class="fa-solid fa-lightbulb"></i>
+          </a>
+          <a href="#" title="Voltar ao topo">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
         </div>
       </div>
 
-      <p class="rodape-direitos">
-        Copyright &copy; 2025 - Legado Automotivo. Todos os direitos reservados.
-      </p>
-    </footer>
-  </body>
+      <div class="rodape-coluna">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="modelos.html">Modelos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contatos</a></li>
+          <li><a href="sugestoes.html">Sugestões</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape-coluna">
+        <a href="aviso.html">aviso importante</a>
+      </div>
+    </div>
+
+    <p class="rodape-direitos">
+      Copyright &copy; 2025 - Legado Automotivo. Todos os direitos reservados.
+    </p>
+  </footer>
+</body>
+
 </html>
