@@ -50,7 +50,8 @@
       </div>
     </div>
 
-    <form action="#" method="post" class="formulario-contato">
+    <form action="https://formsubmit.co/gabriels080404@gmail.com" method="post" class="formulario-contato">
+
 
       <fieldset>
         <legend>Seus Dados</legend>
@@ -88,12 +89,15 @@
         </select>
 
         <p>Condição do Veículo:</p>
-        <input type="radio" id="original" name="condicao" value="original">
-        <label for="original">Totalmente Original</label><br>
-        <input type="radio" id="restaurado" name="condicao" value="restaurado">
-        <label for="restaurado">Restaurado</label><br>
-        <input type="radio" id="modificado" name="condicao" value="modificado">
+
+        <label for="original">Totalmente Original</label>
+        <input type="radio" id="original" name="condicao" value="original"><br>
+
+        <label for="restaurado">Restaurado</label>
+        <input type="radio" id="restaurado" name="condicao" value="restaurado"><br>
+
         <label for="modificado">Customizado / Modificado</label>
+        <input type="radio" id="modificado" name="condicao" value="modificado">
       </fieldset>
 
       <fieldset>
@@ -111,18 +115,38 @@
         <legend>Interesses e Permissões</legend>
 
         <p>Quais tópicos mais te interessam? (Marque quantos quiser)</p>
-        <input type="checkbox" id="int_mecanica" name="interesses" value="mecanica">
-        <label for="int_mecanica">Dicas de Mecânica</label><br>
-        <input type="checkbox" id="int_historia" name="interesses" value="historia">
-        <label for="int_historia">Histórias de Modelos</label><br>
-        <input type="checkbox" id="int_eventos" name="interesses" value="eventos">
-        <label for="int_eventos">Encontros e Eventos</label><br>
 
-        <label for="avaliacao">Qual sua nota para nosso site? (1 a 10)</label>
-        <input type="range" id="avaliacao" name="avaliacao" min="1" max="10" step="1">
 
-        <input type="checkbox" id="termos" name="termos" required>
+        <label for="int_mecanica">Dicas de Mecânica</label>
+        <input type="checkbox" id="int_mecanica" name="interesses" value="mecanica"><br>
+
+        <label for="int_historia">Histórias de Modelos</label>
+        <input type="checkbox" id="int_historia" name="interesses" value="historia"><br>
+
+
+        <label for="int_eventos">Encontros e Eventos</label>
+        <input type="checkbox" id="int_eventos" name="interesses" value="eventos"><br>
+
+
+        <label for="nota">Qual sua nota para nosso site? (1 a 10)</label>
+        <select id="nota" name="nota">
+          <option value="">Escolha uma opção</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+
+
         <label for="termos">Eu autorizo a publicação da minha história e foto no site.</label><br>
+        <input type="checkbox" id="termos" name="termos" required>
       </fieldset>
 
       <input type="submit" value="Enviar Minha História">

@@ -2,6 +2,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 
 body {
   background-color: rgba(26, 24, 25, 255);
@@ -255,7 +256,7 @@ body {
 }
 
 .coluna-artigo{ 
-    max-width: 80ch; /*Limita a quantidade de caracteres por linha 
+    max-width: 200ch; /*Limita a quantidade de caracteres por linha 
   em aproximadamente 80, usando o O da fonte como base*/
     margin: auto;
 }
@@ -383,7 +384,7 @@ blockquote {
   
   gap: 20px;
 
-
+  
   scrollbar-width: none;
 }
 
@@ -397,10 +398,22 @@ blockquote {
   text-align: center;
 }
 
-.galeria-item img{
-  width: 100%;
+.galeria-imagem-container{
+  height: 800px;
+  overflow: hidden;
   border-radius: 5px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+}
+
+.galeria-imagem-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.galeria-imagem-container:hover img{
+  transform: scale(1.05);
 }
 
 .galeria-item caption{
@@ -530,3 +543,34 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: white;
 }
+
+
+.navegacao-interna {
+    margin: 30px 0;
+    padding: 15px;
+    background-color: #222;
+    border-radius: 5px;
+    border-left: 5px solid rgb(216, 178, 6);
+}
+
+.navegacao-interna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navegacao-interna a {
+    color: #ccc;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Estilo para a página Sobre */
+.sobre-hero h1,
+.coluna-artigo .secao-conteudo h3 {
+    font-family: 'Merriweather', serif;
+}
+
