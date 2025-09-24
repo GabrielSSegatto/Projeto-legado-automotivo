@@ -644,3 +644,67 @@ input[type="submit"]:hover {
     font-family: 'Merriweather', serif;
 }
 
+
+
+/* ESTILOS PARA A PÁGINA "EM BREVE" */
+
+.pagina-em-breve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Garante que o conteúdo ocupe o centro da tela */
+    text-align: center;
+    color: #ccc;
+    padding: 40px;
+}
+
+.pagina-em-breve .fa-gears {
+    font-size: 5em;
+    color: rgb(216, 178, 6);
+    margin-bottom: 20px;
+    animation: spin 8s linear infinite; /* Animação de engrenagem girando */
+}
+
+.pagina-em-breve h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    color: white;
+    margin: 10px 0;
+}
+
+.pagina-em-breve p {
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* Reutilizando o estilo do botão da página de agradecimento */
+.pagina-em-breve .btn-primario {
+    background-color: rgb(216, 178, 6);
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pagina-em-breve .btn-primario:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* Animação para o ícone */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
