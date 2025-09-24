@@ -57,10 +57,17 @@
         <legend>Seus Dados</legend>
 
         <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required placeholder="Seu nome como aparecerá na história">
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+
+        <label for="apelido">Apelido (como gostaria de ser chamado):</label>
+        <input type="text" id="apelido" name="apelido" placeholder="Ex: Joaozinho do santana">
 
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required placeholder="Apenas para contato, não será divulgado">
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+
 
         <label for="cidade">Cidade / Estado:</label>
         <input type="text" id="cidade" name="cidade" placeholder="Ex: São Paulo / SP">
@@ -77,6 +84,11 @@
 
         <label for="ano">Ano de Fabricação / Modelo:</label>
         <input type="text" id="ano" name="ano" placeholder="Ex: 1996 / 1996">
+
+        <label for="cor">Cor Predominante:</label>
+        <input type="text" id="cor" name="cor" placeholder="Ex: Preto">
+        <label for="km">Quilometragem Atual:</label>
+        <input type="text" id="km" name="km" placeholder="Ex: 85000">
 
         <label for="motor">Motorização:</label>
         <select id="motor" name="motor">
@@ -98,6 +110,19 @@
 
         <label for="modificado">Customizado / Modificado</label>
         <input type="radio" id="modificado" name="condicao" value="modificado">
+      </fieldset>
+
+      <fieldset>
+        <legend>Qual é o principal tipo de uso do seu carro?</legend>
+
+        <label for="uso-diario">Uso diário</label>
+        <input type="radio" id="uso-diario" name="uso" value="uso-diario"><br>
+
+        <label for="uso-fds">Fim de semana/Passeio</label>
+        <input type="radio" id="uso-fds" name="uso" value="uso-fds"><br>
+
+        <label for="Encontros">Apenas Encontros e Exposições</label>
+        <input type="radio" id="Encontros" name="uso" value="Encontros">
       </fieldset>
 
       <fieldset>
@@ -143,10 +168,15 @@
           <option value="10">10</option>
         </select>
 
-
+        <label for="sugestaoCarro">Qual o próximo carro que você gostaria de ver no site? (Opcional)</label>
+        <input type="text" id="sugestaoCarro" name="sugestaoCarro"  placeholder="Chevrolet Santana">
 
         <label for="termos">Eu autorizo a publicação da minha história e foto no site.</label><br>
         <input type="checkbox" id="termos" name="termos" required>
+
+        <label for="termos">Sou maior de idade.</label><br>
+        <input type="checkbox" id="maiorDe18" name="maiorDe18" required>
+
       </fieldset>
 
       <input type="submit" value="Enviar Minha História">
